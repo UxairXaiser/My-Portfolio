@@ -1,0 +1,88 @@
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:95%;
+	transition: transform 1s;
+	margin:auto;
+}
+h2{
+	padding-left:10px;
+	padding-top:15px;
+}
+img{
+	width:100%;
+}
+.card:hover{
+	transform:scale(1.06);
+}
+.header{
+	font-size:50px;
+	height:150px;
+	background-color:#808080;
+	padding:5px;
+	margin:5px;
+}
+.inner{
+	text-align:center;
+	margin-left:20%;
+}
+.footer{
+	text-align:center;
+	background-color:#808080;
+	padding:50px;
+	margin:5px;
+	height:20px;
+}
+p{
+	padding-left:15px;
+	padding-bottom:15px;
+}
+button{
+	border-radius: 4px;
+  background-color: #000080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.5s;
+  margin-left:15px;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* CSS for back button */
+.back-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff; /* Button background color */
+	color: #fff; /* Button text color */
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+	background-color: #0056b3; /* Darker button background color on hover */
+  }
+  

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("nU8JsXo9edL7zxQ_E");
+   })();
+  </script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">My Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+ <!-- Home Section -->
+<section id="home" class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <div id="profile-picture">
+          <img src="profile.jpg" alt="UZAIR QAISER" class="img-fluid rounded-circle mb-4">
+        </div>        
+        <p>My name is <b>Uzair Qaiser</b>. I am a dedicated software developer currently pursuing a Bachelor's degree in Computer Science at FAST National University. With a strong foundation in programming and a passion for technology, I am focused on expanding my knowledge and skills to excel in the field of software development.</p>
+        <a href="CV.html" id="cvButton" class="btn btn-primary mr-2 btn-vibrate">Show CV</a>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="container mt-5">
+    <h2>Skills</h2>
+    <p>I am a C++ developer with a high level of knowledge in the language. <br>
+      I have studied Python and R and am currently studying web development and AI. <br>
+      I am particularly interested in the application of AI in software development. <br>
+      I am also learning other languages like HTML, CSS, and JavaScript.<br>
+      </p>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="container mt-5">
+  <h2>Projects</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="candy.png" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text">Developed a simplified version of the popular game Candy Crush in C++, implementing basic game mechanics and user interaction.</p>
+          <a href="#" id="view-details-1" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="contact.png" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">A contact management system in C++ that allows users to store, retrieve, and manage their contacts efficiently.</p>
+          <a href="#" id="view-details-2" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="student.jpg" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">A student management system developed in C# Windows Forms, utilizing Oracle 11g as the backend database management system.</p>
+          <a href="#" id="view-details-3" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Contact section-->
+  <section id="contact" class="container mt-5">
+    <h2>Contact</h2>
+    <p>Feel free to Contact us anytime.</p>
+    <form id="contact-form" method="post" action="#">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" onclick="sendMail()">Submit</button>
+    </form>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/uzair.qaiser.94" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/uxairxaiser" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+      <a href="https://wa.link/5w59em" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
